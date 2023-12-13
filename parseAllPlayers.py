@@ -6,18 +6,20 @@ Created on Mon Dec 11 19:30:51 2023
 @author: keith
 """
 import os
-import transactionParser as tp
+#import transactionParser as tp
+import JsonUtil 
 
-indir = 'raw/transactions'
-prettyDir = 'silver/transactionsPretty'
-outdir = 'silver/transactions'
+indir = 'raw/player'
+prettyDir = 'silver/playersPretty'
+outdir = 'silver/playerss'
 
 
 def processFile(directory, file):
     inFile = os.path.join(directory, filename)
-    outFile = os.path.join(outdir, filename)
+    #outFile = os.path.join(outdir, filename)
     prettyFile = os.path.join(prettyDir, filename)
-    tp.parse(inFile, outFile)    
+    #tp.parse(inFile, outFile)
+    JsonUtil.savePretty(inFile, prettyFile)    
     
     
  
