@@ -8,7 +8,7 @@ Created on Sun Dec 10 21:19:38 2023
 import json
 import datetime
 
-fileName="2023-12-10"
+fileName="2023-12-12.39"
 inDir="raw/transactions"
 outDir="silver/transactions"
 
